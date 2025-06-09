@@ -1,30 +1,29 @@
-
 import { Button } from '@/components/ui/button';
 import { Search, BarChart3 } from 'lucide-react';
-
 const Hero = () => {
   const scrollToContact = () => {
     const element = document.getElementById('contact');
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({
+        behavior: 'smooth'
+      });
     }
   };
-
   const scrollToFramework = () => {
     const element = document.getElementById('framework');
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({
+        behavior: 'smooth'
+      });
     }
   };
-
-  return (
-    <section className="py-20 lg:py-32 bg-gradient-to-br from-brand-neutral to-white">
+  return <section className="py-20 lg:py-32 bg-gradient-to-br from-brand-neutral to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-in">
             <h1 className="text-4xl lg:text-6xl font-bold text-brand-purple mb-6 leading-tight">
               Tech spend isn't the problem.{' '}
-              <span className="text-brand-orange">Visibility is.</span>
+              <span className="text-brand-orange font-normal">Visibility is.</span>
             </h1>
             
             <h2 className="text-xl lg:text-2xl text-gray-700 mb-8 leading-relaxed">
@@ -33,16 +32,10 @@ const Hero = () => {
             </h2>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                className="btn-orange text-lg px-8 py-4"
-                onClick={scrollToContact}
-              >
+              <Button className="btn-orange text-lg px-8 py-4" onClick={scrollToContact}>
                 Book a Free Strategy Call
               </Button>
-              <Button 
-                className="btn-outline text-lg px-8 py-4"
-                onClick={scrollToFramework}
-              >
+              <Button className="btn-outline text-lg px-8 py-4" onClick={scrollToFramework}>
                 See How It Works
               </Button>
             </div>
@@ -77,8 +70,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
