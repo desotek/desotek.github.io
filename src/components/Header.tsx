@@ -24,9 +24,11 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold text-brand-purple">
-              Desotek Advisory
-            </h1>
+            <img 
+              src="/lovable-uploads/4b0157b2-1c64-4cbe-954f-1bcd3dfcce4e.png" 
+              alt="Desotek Advisory" 
+              className="h-8"
+            />
           </div>
 
           {/* Desktop Navigation */}
