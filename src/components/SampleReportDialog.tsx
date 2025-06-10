@@ -44,7 +44,7 @@ const SampleReportDialog = ({
           </div>
           
           <div className="flex justify-end gap-3">
-            <Button type="button" variant="outline" onClick={() => onOpenChange(false)}>
+            <Button type="button" variant="outline" onClick={() => onOpenChange(false)} className="bg-[ff9c00] bg-brand-orange">
               Cancel
             </Button>
             <Button type="submit" disabled={!isEmailValid} className="btn-orange">
