@@ -64,8 +64,8 @@ const Header = () => {
           </nav>
 
           {/* CTA Button */}
-          <div className="hidden md:block" onClick={openSchedulingLink}>
-            <Button className="btn-orange">
+          <div className="hidden md:block">
+            <Button className="btn-orange" onClick={openSchedulingLink}>
               📞 Book a Call
             </Button>
           </div>
