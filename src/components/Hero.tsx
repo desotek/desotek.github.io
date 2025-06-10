@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { Search, BarChart3 } from 'lucide-react';
+
 const Hero = () => {
   const scrollToContact = () => {
     const element = document.getElementById('contact');
@@ -9,6 +10,7 @@ const Hero = () => {
       });
     }
   };
+
   const scrollToFramework = () => {
     const element = document.getElementById('framework');
     if (element) {
@@ -17,7 +19,13 @@ const Hero = () => {
       });
     }
   };
-  return <section className="py-20 lg:py-32 bg-gradient-to-br from-brand-neutral to-white">
+
+  const openSchedulingLink = () => {
+    window.open('https://tidycal.com/desotek/30-minute-discovery-meeting', '_blank');
+  };
+
+  return (
+    <section className="py-20 lg:py-32 bg-gradient-to-br from-brand-neutral to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-in">
@@ -32,7 +40,7 @@ const Hero = () => {
             </h2>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="btn-orange text-lg px-8 py-4" onClick={scrollToContact}>
+              <Button className="btn-orange text-lg px-8 py-4" onClick={openSchedulingLink}>
                 Book a Free Strategy Call
               </Button>
               <Button className="btn-outline text-lg px-8 py-4" onClick={scrollToFramework}>
@@ -70,6 +78,8 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Hero;
