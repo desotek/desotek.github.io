@@ -25,7 +25,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <img 
-              src="https://raw.githubusercontent.com/desotek/desotek.github.io/refs/heads/main/src/components/Desotek_Logo.png" 
+              src="https://raw.githubusercontent.com/desotek/desotek.github.io/refs/heads/main/src/components/Desotek_Logo%20v2.png" 
               alt="Desotek Advisory" 
               className="h-8"
             />
