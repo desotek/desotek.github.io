@@ -1,6 +1,10 @@
 
 import { Button } from '@/components/ui/button';
 
+const openSchedulingLink = () => {
+   window.open('https://tidycal.com/desotek/30-minute-discovery-meeting', '_blank');
+};
+
 const Contact = () => {
   return (
     <section id="contact" className="py-20 bg-gradient-to-br from-brand-purple to-purple-800 text-white">
@@ -37,7 +41,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <Button className="btn-orange text-xl px-12 py-4">
+        <Button className="btn-orange text-xl px-12 py-4" onClick={openSchedulingLink}>
           Book a Strategy Call
         </Button>
 
