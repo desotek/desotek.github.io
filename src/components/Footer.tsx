@@ -7,6 +7,7 @@ const Footer = () => {
       });
     }
   };
+
   return <footer className="bg-brand-purple text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-8">
@@ -42,7 +43,7 @@ const Footer = () => {
             <div>
               <h4 className="font-semibold mb-4">Connect</h4>
               <div className="space-y-2">
-                <a href="#" className="block text-gray-300 hover:text-white transition-colors">
+                <a href="https://www.linkedin.com/in/eric-l-martin/" className="block text-gray-300 hover:text-white transition-colors">
                   LinkedIn
                 </a>
                 <a href="#" className="block text-gray-300 hover:text-white transition-colors">
