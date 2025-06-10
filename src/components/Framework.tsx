@@ -1,8 +1,12 @@
 
+import { useState } from 'react';
 import { Search, Scissors, Shield } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import SampleReportDialog from './SampleReportDialog';
 
 const Framework = () => {
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+
   return (
     <section id="framework" className="py-20 bg-brand-neutral">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -67,11 +71,19 @@ const Framework = () => {
         </div>
 
         <div className="text-center">
-          <Button className="btn-outline text-lg px-8 py-4">
+          <Button 
+            className="btn-outline text-lg px-8 py-4"
+            onClick={() => setIsDialogOpen(true)}
+          >
             Request a Sample Report
           </Button>
         </div>
       </div>
+
+      <SampleReportDialog 
+        open={isDialogOpen} 
+        onOpenChange={setIsDialogOpen} 
+      />
     </section>
   );
 };
